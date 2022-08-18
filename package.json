@@ -1,0 +1,24 @@
+{
+  "name": "wwt-frontend",
+  "version": "1.0.0",
+  "description": "World-Wide Trending",
+  "main": "index.html",
+  "scripts": {
+    "test": "test",
+    "start": "snowpack dev",
+    "build": "snowpack build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cvt-park-to-human/WWT-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cvt-park-to-human/WWT-frontend/issues"
+  },
+  "homepage": "https://github.com/cvt-park-to-human/WWT-frontend#readme",
+  "devDependencies": {
+    "snowpack": "^3.8.8"
+  }
+}
