@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import 'styles/style.css';
 import useTranslation from 'next-translate/useTranslation'
 
 const Home: NextPage = () => {
@@ -11,16 +10,15 @@ const Home: NextPage = () => {
   const [data, setData] = useState<string[]>([])
 
   useEffect(() => {
-    axios.get('http://192.168.0.68:8000/data').then((res: any) => {
-      const response = res.data
-      console.log('response =', response)
-      const parsedData: Array<any> = []
+    axios.get('http://bgung.iptime.org:7777/data').then((res: any) => {
+      const response = res.data.trend_rank;
+      const parsedData: Array<any> = [];
       Object.keys(response).forEach((key) => {
         parsedData.push(response[key])
       })
       setData(parsedData)
     })
-  }, [])
+  }, []);
 
   // useEffect(async () => {
   //   try {
