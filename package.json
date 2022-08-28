@@ -1,25 +1,29 @@
 {
-  "name": "wwt-frontend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cvt-park-to-human/WWT-frontend.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
+	"name": "wwt-frontend",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cvt-park-to-human/WWT-frontend.git"
+	},
+	"scripts": {
+		"prestart": "npm install && lerna bootstrap",
+		"start": "lerna run start",
+		"test": "lerna run test",
+		"build": "lerna run build",
+		"graph": "nx graph"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
     "url": "https://github.com/cvt-park-to-human/WWT-frontend/issues"
   },
   "homepage": "https://github.com/cvt-park-to-human/WWT-frontend#readme",
-  "dependencies": {
-    "next": "^12.2.5",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  }
+	"devDependencies": {
+		"lerna": "^5.4.3",
+		"nx": "^14.5.10",
+		"tslib": "^2.4.0"
+	}
 }
