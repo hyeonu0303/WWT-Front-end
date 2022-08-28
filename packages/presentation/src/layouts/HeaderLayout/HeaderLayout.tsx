@@ -7,16 +7,17 @@ import {
 } from './HeaderLayout.styles'
 
 interface HeaderLayoutProps {
-  children?: React.ReactNode;
-	headerElement?: React.ReactNode;
+  children?: React.ReactNode
+  headerElement?: React.ReactNode
 }
 
-const HeaderLayout: React.FC<HeaderLayoutProps> = ({ children, headerElement }) => {
+const HeaderLayout: React.FC<HeaderLayoutProps> = ({
+  children,
+  headerElement,
+}) => {
   return (
     <div css={WrapperStyle}>
-      <header css={HeaderStyle}>
-				{headerElement}
-			</header>
+      <header css={HeaderStyle}>{headerElement}</header>
       <div css={ContentsWrapperStyle}>{children}</div>
     </div>
   )

@@ -14,7 +14,7 @@ const Header: React.FC<{}> = () => {
             src={LogoHorizon}
             alt="Horizon Logo"
             objectFit="contain"
-						width={256}
+            width={256}
           />
         </a>
       </Link>

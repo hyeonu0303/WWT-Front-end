@@ -21,17 +21,24 @@ const Home: NextPage = () => {
 
   return (
     <div>
-			<Container>
-				<h1 style={{ textAlign: 'center' }}>World Wide Trends</h1>
-				{/* <h1>{t('common:title')}</h1> */}
-				{data.map((keyword: string, i) => {
-					return (
-						<h1 key={keyword}>
-							{i + 1}위: <a target="_blank" rel='noreferrer' href={`https://www.google.com/search?q=${keyword}`}>{keyword}</a>
-						</h1>
-					)
-				})}
-			</Container>
+      <Container>
+        <h1 style={{ textAlign: 'center' }}>World Wide Trends</h1>
+        {/* <h1>{t('common:title')}</h1> */}
+        {data.map((keyword: string, i) => {
+          return (
+            <h1 key={keyword}>
+              {i + 1}위:{' '}
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={`https://www.google.com/search?q=${keyword}`}
+              >
+                {keyword}
+              </a>
+            </h1>
+          )
+        })}
+      </Container>
       <footer></footer>
     </div>
   )

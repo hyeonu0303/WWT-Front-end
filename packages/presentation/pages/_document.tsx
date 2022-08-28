@@ -5,10 +5,10 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-					<meta name="description" content="World-Wide-Trends" />
-					<meta charSet="utf-8"></meta>
-        	<link rel="icon" href="/favicon.ico" />
-				</Head>
+          <meta name="description" content="World-Wide-Trends" />
+          <meta charSet="utf-8"></meta>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
         <body>
           <Main />
           <NextScript />
