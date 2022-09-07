@@ -9,7 +9,7 @@ const Home: NextPage = () => {
   const [data, setData] = useState<string[]>([])
 
   useEffect(() => {
-    axios.get('http://bgung.iptime.org:7777/data').then((res: any) => {
+    axios.get('http://34.83.6.33:80/data').then((res: any) => {
       const response = res.data.trend_rank
       const parsedData: Array<any> = []
       Object.keys(response).forEach((key) => {
