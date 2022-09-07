@@ -9,7 +9,7 @@ const Header: React.FC<{}> = () => {
   return (
     <div css={WrapperStyle}>
       <Link href="/">
-        <a>
+        <a href="/">
           <Image
             src={LogoHorizon}
             alt="Horizon Logo"

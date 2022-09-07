@@ -4,19 +4,19 @@ import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { HeaderLayout } from 'layouts'
 import { Header } from 'containers'
-import ThemeProvider from "global/ThemeProvider";
+import ThemeProvider from 'global/ThemeProvider'
 
 const GlobalApp = ({ Component, pageProps }: AppProps) => {
   return (
-    <HeaderLayout headerElement={<Header />}>
-      <Head>
-        <title>World Wide Trends</title>
-        <meta name="viewport" content="initial-scale=1, width=device-width" />
-      </Head>
-			<ThemeProvider>
-	      <Component {...pageProps} />
-			</ThemeProvider>
-    </HeaderLayout>
+    <ThemeProvider>
+      <HeaderLayout headerElement={<Header />}>
+        <Head>
+          <title>World Wide Trends</title>
+          <meta name="viewport" content="initial-scale=1, width=device-width" />
+        </Head>
+        <Component {...pageProps} />
+      </HeaderLayout>
+    </ThemeProvider>
   )
 }
 

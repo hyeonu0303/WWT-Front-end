@@ -1,9 +1,10 @@
-import { css } from '@emotion/react'
+import { css, Theme } from '@emotion/react'
 
-export const HeaderStyle = css`
-  height: 75px;
-  width: 100%;
-  border-bottom: 1px solid black;
+export const HeaderStyle = (theme: Theme) => css`
+	height: 75px;
+	width: 100%;
+	overflow: hidden;
+	box-shadow: ${theme.shadows[2]};
 `
 
 export const WrapperStyle = css`
@@ -16,4 +17,8 @@ export const WrapperStyle = css`
 export const ContentsWrapperStyle = css`
   flex: 1;
   overflow: auto;
+`
+
+export const HeaderContainerStyle = css`
+	height: 100%;
 `

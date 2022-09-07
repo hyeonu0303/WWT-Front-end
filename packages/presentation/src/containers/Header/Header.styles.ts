@@ -5,4 +5,6 @@ export const WrapperStyle = css`
   width: 100%;
   overflow: hidden;
   position: relative;
+	display: flex;
+	align-items: center;
 `
