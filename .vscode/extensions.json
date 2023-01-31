@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "vscode-icons-team.vscode-icons",
+    "naumovs.color-highlight",
+    "dbaeumer.vscode-eslint",
+    "svelte.svelte-vscode",
+    "loiane.ts-extension-pack"
+  ]
+}
