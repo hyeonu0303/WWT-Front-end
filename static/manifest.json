@@ -1,18 +1,17 @@
 {
   "short_name": "WWT",
   "name": "World-Wide-Trends",
-  "start_url": "/",
   "lang": "kr",
   "icons": [
     {
-      "src": "favicon_big.png",
+      "src": "favicon.png",
       "type": "image/png",
       "sizes": "192x192 64x64 32x32 24x24 16x16"
     }
   ],
-  "display": "fullscreen",
-  "orientation": "portrait",
+  "start_url": "/",
   "scope": "/",
+  "display": "fullscreen",
   "description": "실시간으로 세상의 현황을 본다.",
   "theme_color": "#11053C",
   "background_color": "#11053C"
