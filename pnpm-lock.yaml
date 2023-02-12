@@ -6,6 +6,7 @@ specifiers:
   '@sveltejs/kit': ^1.0.0-next.587
   '@typescript-eslint/eslint-plugin': ^5.45.0
   '@typescript-eslint/parser': ^5.45.0
+  carbon-components-svelte: ^0.72.3
   eslint: ^8.28.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-svelte3: ^4.0.0
@@ -23,6 +24,7 @@ devDependencies:
   '@sveltejs/kit': 1.3.6_svelte@3.55.1+vite@4.0.4
   '@typescript-eslint/eslint-plugin': 5.50.0_go4drrxstycfikanvu45pi4vgq
   '@typescript-eslint/parser': 5.50.0_4vsywjlpuriuw3tl5oq6zy5a64
+  carbon-components-svelte: 0.72.3
   eslint: 8.33.0
   eslint-config-prettier: 8.6.0_eslint@8.33.0
   eslint-plugin-svelte3: 4.0.0_4omm2ewoudhgnmf7aocafatnc4
@@ -710,6 +712,12 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
+  /carbon-components-svelte/0.72.3:
+    resolution: {integrity: sha512-ill4KeWH7THXDLRfuxg0panknTvl75U54+6366yNmtkPbzmCqp/gw5aW3JPlJcOyYny1F9X+fTYY3kQkEigORA==}
+    dependencies:
+      flatpickr: 4.6.9
+    dev: true
+
   /chalk/4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
@@ -1055,6 +1063,10 @@ packages:
     dependencies:
       flatted: 3.2.7
       rimraf: 3.0.2
+    dev: true
+
+  /flatpickr/4.6.9:
+    resolution: {integrity: sha512-F0azNNi8foVWKSF+8X+ZJzz8r9sE1G4hl06RyceIaLvyltKvDl6vqk9Lm/6AUUCi5HWaIjiUbk7UpeE/fOXOpw==}
     dev: true
 
   /flatted/3.2.7:
