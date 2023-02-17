@@ -5,7 +5,9 @@
 <div class="wrapper">
 	<div class="cover">
 		<div class="searchBox">
-			<input class="search" />
+			<div class="inputWrapper">
+				<input class="search" />
+			</div>
 			<div class="searchButton">
 				<img width="32" src={Search} alt="search" />
 			</div>
@@ -41,8 +43,11 @@
 		display: flex;
 	}
 
-	.search {
+	.inputWrapper {
 		flex: 1;
+	}
+	.search {
+		width: 100%;
 		height: 100%;
 		border: none;
 		outline: none;
