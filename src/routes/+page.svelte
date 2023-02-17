@@ -4,6 +4,7 @@
 
 <div class="wrapper">
 	<div class="cover">
+		<h1>WORLD<br /> WIDE<br />TRENDS</h1>
 		<div class="searchBox">
 			<div class="inputWrapper">
 				<input class="search" />
@@ -36,11 +37,12 @@
 	}
 	.searchBox {
 		width: 1000px;
-		max-width: 80%;
+		max-width: 50%;
 		height: 80px;
 		/* background-color: rgb(234, 56, 98); */
 		border: 8px solid rgb(234, 56, 98);
 		display: flex;
+		border-radius: 8px;
 	}
 
 	.inputWrapper {
@@ -66,5 +68,25 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+
+	h1 {
+		font-size: 80px;
+		font-weight: bold;
+		color: white;
+		position: absolute;
+		left: 16px;
+		line-height: 70px;
+	}
+
+	@media screen and (max-width: 991px) {
+		h1 {
+			top: 36px;
+			left: 10%;
+		}
+
+		.searchBox {
+			max-width: 80%;
+		}
 	}
 </style>
