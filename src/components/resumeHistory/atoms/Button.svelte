@@ -4,7 +4,6 @@
   const color: any = 'secondary'
 </script>
 
-<button>{buttonText}</button>
 <Button outline={color}>{buttonText}</Button>
 <style>
   /* Button 스타일을 여기에 작성하세요 */

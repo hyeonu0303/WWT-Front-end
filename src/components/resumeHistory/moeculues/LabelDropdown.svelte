@@ -1,24 +1,26 @@
 <script lang="ts">
-  import Input from '../atoms/Input.svelte';
   import Label from '../atoms/Label.svelte';
-  export let labelText: string[] = ['대학', '학교명', '지역', '전공', '주/야간', '학점'];
-  export let inputValues: string[] = Array(labelText.length).fill('');
+  import Dropdown from '../atoms/Dropdown.svelte';
+  export let labelText: string = 'test';
+  export let dropItems: string[]=[];
 </script>
-<div class="container mt-5" style="max-width:768px;">
-  <h3>대학</h3>
-  {#each labelText as text, i}
+<div class="labelDrop container mt-2">
   <div class="input_label">
-    <Label {text}/>
+    <Label text={labelText}/>
   </div>
-  <div class="input_value">
-    <Input bind:value={inputValues[i]} placeholder="{labelText[i]} 입력" /><br>
+  <div class="dropdown">
+    <Dropdown 
+      dropItems={dropItems}
+    />
   </div>
-  {/each}
 </div>
 
 <style>
-  .container{
-    background: #eee;
-    padding:30px;
+  .labelDrop{
+    display:flex;
   }
+  .input_label{
+    width:100px;
+  }
+  
 </style>

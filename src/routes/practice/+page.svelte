@@ -1,5 +1,5 @@
 <script>
-  import Card from '../../components/resumeHistory/moeculues/LabelDropdown.svelte';
+  import UnivCard from "../../components/resumeHistory/organisms/UnivCard.svelte";
 </script>
 
-<Card/>
+<UnivCard/>

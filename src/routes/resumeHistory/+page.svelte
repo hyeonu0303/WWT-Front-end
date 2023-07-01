@@ -74,7 +74,6 @@
       <Button color="primary" class="mt-4" type="submit" on:click={addInfo}>추가</Button>
       <Button color="primary" class="mt-4"type="submit" on:click={deleteInfo}>삭제</Button>
       
-      <Form />
     </Col>
   </Row>
 </Container>
